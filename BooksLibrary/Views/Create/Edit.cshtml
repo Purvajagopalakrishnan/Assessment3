@@ -1,0 +1,34 @@
+﻿@model BooksLibrary.Models.Books
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Books</h4>
+<hr />
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+    <div>
+        
+            <select asp-for=" Book_Name">
+                <option value="Book1">Book1</option>
+                <option value="Book2">Book2</option>
+                <option value="Book3">Book3</option>
+
+            </select>
+
+    </div>
+
+
+<div class="form-group">
+    <input type="submit" value="Save" class="btn btn-default" />
+</div>
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
